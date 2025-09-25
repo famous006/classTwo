@@ -20,7 +20,7 @@ const App = () => {
     <>
     <Navbar/>
     <Routes>
-        <Route path='/' element={token?<Herosection/>:<Navigate to='/signin'/>}/>
+        <Route path='/dashboard' element={token?<Herosection/>:<Navigate to='/signin'/>}/>
         <Route path='/my-about' element={<About/>}/>
         <Route path='about' element={<Navigate to='/my-about'/>}/>
         <Route path='/contact' element={<Contact/>}/>
