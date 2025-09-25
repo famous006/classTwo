@@ -10,7 +10,7 @@ const Signin = () => {
 
     const loginUser = () => {
         const oldUser = { email, password }
-        axios.post("https://class-two.onrender.com//user/signin", oldUser)
+        axios.post("https://class-two.onrender.com/user/signin", oldUser)
             .then((res) => {
                 console.log("Response:", res.data);
 
